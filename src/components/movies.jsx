@@ -11,7 +11,8 @@ class Movies extends Component {
                         <th>Genre</th>
                         <th>Stock</th>
                         <th>Rate</th>
-                        <th></th>
+                        <th />
+                        <th />
                     </tr>
                 </thead>
 
@@ -20,7 +21,8 @@ class Movies extends Component {
                         <Movie
                             key={movie._id}
                             movie={movie}
-                            onClick={this.props.onClick}
+                            onDelete={this.props.onDelete}
+                            onLikeToggle={this.props.onLikeToggle}
                         />
                     );
                 })}
